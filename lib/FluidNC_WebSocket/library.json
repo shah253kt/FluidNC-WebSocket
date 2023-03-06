@@ -1,0 +1,29 @@
+{
+    "name": "FluidNC_WebSocket",
+    "version": "1.0.0",
+    "description": "A \"FluidNC WebSocket\" library is a client library that communicates with FluidNC controller over websocket protocol, sends commands and receives output",
+    "keywords": "fluidnc, cnc, websocket",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/AC8L/FluidNC-WebSocket.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Sardar Azari",
+        "email": "me@sardar.net",
+        "url": "https://github.com/AC8L",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/AC8L/FluidNC-WebSocket.git",
+    "dependencies": {
+      "links2004/WebSockets": "^2.3.7",
+      "khoih-prog/ESP32TimerInterrupt": "^2.3.0",
+      "powerbroker2/SafeString": "^4.1.25"
+    },
+    "frameworks": "arduino",
+    "platforms": "espressif32"
+  }
