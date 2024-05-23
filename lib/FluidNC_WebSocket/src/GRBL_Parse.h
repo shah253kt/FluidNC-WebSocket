@@ -72,6 +72,9 @@ void _getGrblState(bool full, const void *mem, uint32_t len)
 
     //DEBUG_SERIAL.println(grblState);
     //DEBUG_SERIAL.printf("charAt(1): %c\n", grblState.charAt(1));
+    if (grblState.startsWith("ok") || grblState.startsWith("error")) {
+      return;
+    }
 
     if (grblState.charAt(1) == 'J') _mState = Jog;
         else if (grblState.charAt(3) == 'm') _mState = Home;
