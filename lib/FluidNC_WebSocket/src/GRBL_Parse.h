@@ -10,7 +10,7 @@ void _convertPos(bool isM, SafeString& s) {
   s.remove(0, x_idx+1);
 
   cSF(sy,8);
-  y_idx = s.indexOf(',', x_idx);
+  y_idx = s.indexOf(',');
   s.substring(sy, 0, y_idx);
 //  DEBUG_SERIAL.println(sy); 
   sy.toFloat(y);
